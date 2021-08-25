@@ -15,4 +15,5 @@
 * springboot-mongodb：boot整合mongodb
 * springboot-spi-study：spi技术学习
 * springboot-websocket：boot整合websocket
+* springboot-spring-retry: spring重试机制
 
