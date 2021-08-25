@@ -1,5 +1,5 @@
 # springboot-study
-👉👉👉 记录spring-boot整合一些技术的学习过程，期待您的**☆☆☆Star☆☆☆**
+👉👉👉 记录spring-boot整合一些技术的学习过程，期待您的**★★★Star★★★**
 
 ---
 
