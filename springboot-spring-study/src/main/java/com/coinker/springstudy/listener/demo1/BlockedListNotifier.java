@@ -1,4 +1,4 @@
-package com.coinker.springstudy.demo1;
+package com.coinker.springstudy.listener.demo1;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

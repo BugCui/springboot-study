@@ -18,9 +18,11 @@
 * springboot-websocket：boot整合websocket
 * springboot-spring-retry: spring重试机制
 * springboot-spring-study: Spring核心组件学习
+* springboot-design-study: 设计模式相关学习
 
 ### 2.待学习
 
 * 设计模式：
-    * 观察者模式   
+    * 观察者模式 √
+  
 

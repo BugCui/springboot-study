@@ -1,17 +1,14 @@
 package com.coinker.springstudy;
 
-import com.coinker.springstudy.demo1.BlockedListNotifier;
-import com.coinker.springstudy.demo1.EmailService;
-import com.coinker.springstudy.demo1.SendEmailService;
-import com.coinker.springstudy.demo2.MySpringContextListener;
-import com.coinker.springstudy.demo2.MySpringContextListener2;
-import com.coinker.springstudy.demo3.BlockedListNotifier2;
+import com.coinker.springstudy.listener.demo1.EmailService;
+import com.coinker.springstudy.listener.demo2.MySpringContextListener;
+import com.coinker.springstudy.listener.demo2.MySpringContextListener2;
+import com.coinker.springstudy.listener.demo3.BlockedListNotifier2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.util.ArrayList;

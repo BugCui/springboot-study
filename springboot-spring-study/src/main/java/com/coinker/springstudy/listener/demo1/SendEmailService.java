@@ -1,8 +1,7 @@
-package com.coinker.springstudy.demo1;
+package com.coinker.springstudy.listener.demo1;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

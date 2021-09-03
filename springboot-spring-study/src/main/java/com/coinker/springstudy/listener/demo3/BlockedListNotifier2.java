@@ -1,10 +1,9 @@
-package com.coinker.springstudy.demo3;
+package com.coinker.springstudy.listener.demo3;
 
-import com.coinker.springstudy.demo1.BlockedListEvent;
+import com.coinker.springstudy.listener.demo1.BlockedListEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEvent;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.ContextStartedEvent;
 import org.springframework.context.event.EventListener;
@@ -13,7 +12,6 @@ import org.springframework.core.ResolvableType;
 import org.springframework.core.ResolvableTypeProvider;
 import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Component;
 
 /**
  * @author Cui Shenpeng

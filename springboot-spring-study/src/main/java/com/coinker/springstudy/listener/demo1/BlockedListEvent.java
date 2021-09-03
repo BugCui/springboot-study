@@ -1,4 +1,4 @@
-package com.coinker.springstudy.demo1;
+package com.coinker.springstudy.listener.demo1;
 
 import org.springframework.context.ApplicationEvent;
 
