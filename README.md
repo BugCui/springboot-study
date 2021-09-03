@@ -1,4 +1,5 @@
 # springboot-study
+
 👉👉👉 记录spring-boot整合一些技术的学习过程，期待您的**★★★Star★★★**
 
 ---
@@ -16,4 +17,10 @@
 * springboot-spi-study：spi技术学习
 * springboot-websocket：boot整合websocket
 * springboot-spring-retry: spring重试机制
+* springboot-spring-study: Spring核心组件学习
+
+### 2.待学习
+
+* 设计模式：
+    * 观察者模式   
 
