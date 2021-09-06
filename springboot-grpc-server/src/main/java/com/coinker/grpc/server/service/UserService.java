@@ -7,7 +7,6 @@ import com.example.grpc.UserServiceGrpc;
 import io.grpc.stub.StreamObserver;
 
 
-
 @GrpcService
 public class UserService extends UserServiceGrpc.UserServiceImplBase {
 
