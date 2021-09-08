@@ -9,6 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.StringHttpMessageConverter;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class FastjsonConverter {
 
 		// 处理中文乱码问题1
 		// 处理中文乱码问题2
-		fastJsonConfig.setCharset(Charset.forName("UTF-8"));
+		fastJsonConfig.setCharset(StandardCharsets.UTF_8);
 		fastMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
 		//fastMediaTypes.add(MediaType.valueOf("text/plain;charset=UTF-8"));
 		//fastMediaTypes.add(MediaType.valueOf("text/html;charset=UTF-8"));
@@ -41,7 +42,7 @@ public class FastjsonConverter {
 		fastConverter.setFastJsonConfig(fastJsonConfig);
 		
 		StringHttpMessageConverter stringConverter = new StringHttpMessageConverter();
-		stringConverter.setDefaultCharset(Charset.forName("UTF-8"));
+		stringConverter.setDefaultCharset(StandardCharsets.UTF_8);
 		stringConverter.setSupportedMediaTypes(fastMediaTypes);
 		
 		// 将转换器添加到converters中

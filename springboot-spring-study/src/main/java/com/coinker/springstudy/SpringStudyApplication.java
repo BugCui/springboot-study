@@ -18,7 +18,7 @@ import java.util.List;
  * @author Administrator
  */
 @SpringBootApplication
-@EnableScheduling // 开启定时任务功能
+@EnableScheduling // 开 启定时任务功能
 public class SpringStudyApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(SpringStudyApplication.class);
