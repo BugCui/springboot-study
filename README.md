@@ -19,6 +19,7 @@
 * springboot-spring-retry: spring重试机制
 * springboot-spring-study: Spring核心组件学习
 * springboot-design-study: 设计模式相关学习
+* springboot-kafka-study: boot整合kafka
 
 ### 2.待学习
 
