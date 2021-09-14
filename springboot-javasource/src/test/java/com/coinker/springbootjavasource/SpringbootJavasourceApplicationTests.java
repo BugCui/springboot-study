@@ -1,10 +1,10 @@
-package com.coinker.websocket;
+package com.coinker.springbootjavasource;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootWebsocketApplicationTests {
+class SpringbootJavasourceApplicationTests {
 
     @Test
     void contextLoads() {
