@@ -25,5 +25,7 @@
 
 * 设计模式：
     * 观察者模式 √
+* SpringBoot整合Dubbo
+* SpringBoot整合TDengine
   
 
