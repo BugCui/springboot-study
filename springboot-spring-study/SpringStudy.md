@@ -57,3 +57,17 @@ META-INF 文件夹的作用
 > 参考：https://www.cnblogs.com/qdhxhz/p/11020434.html
 > 
 > 参考：https://www.cnblogs.com/qdhxhz/p/11027546.html
+
+### 5.ThreadLocal、InheritableThreadLocal、TransmittableThreadLocal三者之间区别
+
+ThreadLocal
+* ThreadLocal解决的是每个线程可以拥有自己线程的变量实例。可以从隔离的角度解决变量线程安全的问题。
+
+InheritableThreadLocal
+* 前面说到ThreadLocal并不支持子线程，InheritableThreadLocal就是支持子线程的ThreadLocal
+
+TransmittableThreadLocal
+* 上面介绍了ThreadLocal可以同线程共享变量。InheritableThreadLocal可以父子线程共享变量，那么我们经常使用的线程池如何使用ThreadLocal这样的功能呢？TransmittableThreadLocal简称（TTL）是阿里开源的一款支持线程池的ThreadLocal组件。
+
+
+>参考：https://blog.csdn.net/weixin_43954303/article/details/113837928?spm=1001.2014.3001.5501
