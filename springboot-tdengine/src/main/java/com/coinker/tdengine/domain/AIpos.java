@@ -1,9 +1,8 @@
 package com.coinker.tdengine.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.util.Date;
 
 /**
  * @author Cui Shenpeng
@@ -14,6 +13,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class AIpos {
 
     private String productKey;
@@ -21,6 +21,8 @@ public class AIpos {
     private String deviceName;
 
     private String iotId;
+
+    private Date time_stamp;
 
     private Double uptime;
 

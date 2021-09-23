@@ -1,5 +1,9 @@
 package com.coinker.tdengine.dao;
 
+import com.coinker.tdengine.domain.AIpos;
+
+import java.util.List;
+
 /**
  * @author Cui Shenpeng
  * @Classname AIposMapper
@@ -7,6 +11,15 @@ package com.coinker.tdengine.dao;
  */
 public interface AIposMapper {
 
-    void insert();
+    void dropDB();
 
+    void createDB();
+
+    void createSuperTable();
+
+    void insert(AIpos aIpos);
+
+    List<Double> query(String deviceName, String identifier);
 }
+
+

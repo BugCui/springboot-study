@@ -4,8 +4,35 @@
 <mapper namespace="com.coinker.tdengine.dao.AIposMapper">
 
     <insert id="insert">
-
+        insert into tb_device_#{deviceName} using tb_product_#{productKey} tags(#{deviceName}, #{iotId})
+        values (#{time_stamp}, #{uptime}, #{mem_used}, #{cpu_used_pp})
     </insert>
+
+    <update id="createDB">
+        create
+        database if not exists hll_iot
+    </update>
+
+    <update id="dropDB">
+        drop
+        database if exists hll_iot
+    </update>
+
+    <update id="createSuperTable">
+        create
+        stable IF NOT EXISTS hll_iot.tb_product_g7ajakeusts
+        (
+            ts          TIMESTAMP,
+            uptime      DOUBLE,
+            mem_used    DOUBLE,
+            cpu_used_pp DOUBLE
+        ) TAGS ( devicename NCHAR (64),iotid NCHAR(128))
+    </update>
+
+    <select id="query" resultType="java.lang.Double">
+        select #{identifier}
+        from tb_device_#{deviceName}
+    </select>
 
 
 </mapper>
