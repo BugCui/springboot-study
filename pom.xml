@@ -44,6 +44,7 @@
         <module>springboot-spring-study/springboot-threadlocal</module>
         <module>springboot-tdengine</module>
         <module>springboot-websocket</module>
+        <module>springboot-moquette</module>
     </modules>
 
     <dependencies>

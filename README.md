@@ -27,6 +27,7 @@
 * 设计模式：
     * 观察者模式 √
 * SpringBoot整合Dubbo
-* SpringBoot整合TDengine
+* SpringBoot整合TDengine √
+* springboot整合[moquette](https://github.com/moquette-io/moquette#1-minute-set-up)
   
 
