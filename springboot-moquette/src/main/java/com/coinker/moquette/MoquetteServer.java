@@ -26,8 +26,10 @@ import java.util.List;
 @Slf4j
 @Service
 public class MoquetteServer {
+    @Value("${mqtt-server.config-path}")
+    private String configFilePath;
     @Autowired
-    private IAuthorizatorPolicy authorizator;
+    private IAuthorizator authorizator;
 
     /**
      * Safety相关的拦截器，如果有其它业务，可以再去实现一个拦截器处理其它业务
@@ -39,30 +41,8 @@ public class MoquetteServer {
     private Server mqttServer;
 
     public void startServer() throws IOException {
-//        IResourceLoader configFileResourceLoader = new ClasspathResourceLoader(configFilePath);
-//        final IConfig config = new ResourceLoaderConfig(configFileResourceLoader);
-
-        IConfig config = new IConfig() {
-            @Override
-            public void setProperty(String s, String s1) {
-
-            }
-
-            @Override
-            public String getProperty(String s) {
-                return null;
-            }
-
-            @Override
-            public String getProperty(String s, String s1) {
-                return null;
-            }
-
-            @Override
-            public IResourceLoader getResourceLoader() {
-                return null;
-            }
-        };
+        IResourceLoader configFileResourceLoader = new ClasspathResourceLoader(configFilePath);
+        final IConfig config = new ResourceLoaderConfig(configFileResourceLoader);
 
         mqttServer = new Server();
 
