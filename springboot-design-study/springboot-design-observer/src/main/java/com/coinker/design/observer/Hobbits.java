@@ -21,18 +21,18 @@
  * THE SOFTWARE.
  */
 
-package com.coinker.design.study.oberver;
+package com.coinker.design.observer;
 
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Orcs.
+ * Hobbits.
  */
 @Slf4j
-public class Orcs implements WeatherObserver {
+public class Hobbits implements WeatherObserver {
 
   @Override
   public void update(WeatherType currentWeather) {
-    LOGGER.info("The orcs are facing " + currentWeather.getDescription() + " weather now");
+    LOGGER.info("The hobbits are facing {} weather now", currentWeather.getDescription());
   }
 }

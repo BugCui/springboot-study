@@ -9,9 +9,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>springboot-design-study</artifactId>
+    <groupId>com.coinker</groupId>
+    <artifactId>springboot-design-observer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-design-study</name>
+    <name>springboot-design-observer</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

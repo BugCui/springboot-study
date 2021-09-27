@@ -21,7 +21,7 @@
  * THE SOFTWARE.
  */
 
-package com.coinker.design.study.oberver;
+package com.coinker.design.observer;
 
 import lombok.extern.slf4j.Slf4j;
 

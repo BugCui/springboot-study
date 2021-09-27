@@ -1,10 +1,10 @@
-package com.coinker.design.study;
+package com.coinker.design.observer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootDesignStudyApplicationTests {
+class SpringbootDesignObserverApplicationTests {
 
     @Test
     void contextLoads() {

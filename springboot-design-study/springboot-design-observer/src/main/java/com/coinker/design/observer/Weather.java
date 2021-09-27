@@ -21,30 +21,49 @@
  * THE SOFTWARE.
  */
 
-package com.coinker.design.study.oberver;
+package com.coinker.design.observer;
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * WeatherType enumeration.
+ * Weather can be observed by implementing {@link WeatherObserver} interface and registering as
+ * listener.
  */
-public enum WeatherType {
+@Slf4j
+public class Weather {
 
-  SUNNY("Sunny"),
-  RAINY("Rainy"),
-  WINDY("Windy"),
-  COLD("Cold");
+  private WeatherType currentWeather;
+  private final List<WeatherObserver> observers;
 
-  private final String description;
-
-  WeatherType(String description) {
-    this.description = description;
+  public Weather() {
+    observers = new ArrayList<>();
+    currentWeather = WeatherType.SUNNY;
   }
 
-  public String getDescription() {
-    return this.description;
+  public void addObserver(WeatherObserver obs) {
+    observers.add(obs);
   }
 
-  @Override
-  public String toString() {
-    return this.name().toLowerCase();
+  public void removeObserver(WeatherObserver obs) {
+    observers.remove(obs);
+  }
+
+  /**
+   * Makes time pass for weather.
+   */
+  public void timePasses() {
+    WeatherType[] enumValues = WeatherType.values();
+    currentWeather = enumValues[(currentWeather.ordinal() + 1) % enumValues.length];
+    LOGGER.info("The weather changed to {}.", currentWeather);
+    notifyObservers();
+  }
+
+  private void notifyObservers() {
+    for (WeatherObserver obs : observers) {
+      obs.update(currentWeather);
+    }
   }
 }

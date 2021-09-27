@@ -25,7 +25,6 @@
 
     <modules>
         <module>springboot-mongodb</module>
-        <module>springboot-design-study</module>
         <module>springboot-docker</module>
         <module>springboot-emqx-sdk</module>
         <module>springboot-grpc-client</module>
@@ -38,6 +37,7 @@
         <module>springboot-lombok-principle</module>
         <module>springboot-spi-study</module>
         <module>springboot-spring-retry</module>
+        <module>springboot-spring-study</module>
         <module>springboot-spring-study/springboot-conditional</module>
         <module>springboot-spring-study/springboot-conditionalon</module>
         <module>springboot-spring-study/springboot-listener</module>
@@ -45,6 +45,8 @@
         <module>springboot-tdengine</module>
         <module>springboot-websocket</module>
         <module>springboot-moquette</module>
+        <module>springboot-design-study</module>
+        <module>springboot-design-study/springboot-design-observer</module>
     </modules>
 
     <dependencies>
