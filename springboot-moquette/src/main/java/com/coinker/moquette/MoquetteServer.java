@@ -29,7 +29,7 @@ public class MoquetteServer {
     @Value("${mqtt-server.config-path}")
     private String configFilePath;
     @Autowired
-    private IAuthorizator authorizator;
+    private IAuthorizatorPolicy authorizator;
 
     /**
      * Safety相关的拦截器，如果有其它业务，可以再去实现一个拦截器处理其它业务
