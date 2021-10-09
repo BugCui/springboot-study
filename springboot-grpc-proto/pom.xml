@@ -23,6 +23,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <protobuf.plugin.version>0.5.1</protobuf.plugin.version>
         <protoc.version>3.5.1</protoc.version>
+        <os.detected.classifier>osx-x86_64</os.detected.classifier>
     </properties>
 
     <dependencies>
