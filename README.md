@@ -25,6 +25,5 @@
 ### 2.待学习
 
 * SpringBoot整合Dubbo
-* springboot整合[moquette](https://github.com/moquette-io/moquette#1-minute-set-up)
-  
+
 
