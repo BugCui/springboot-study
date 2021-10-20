@@ -1,8 +1,9 @@
-# springboot-study
+# 🧲 springboot-study
 
-👉👉👉 记录spring-boot整合一些技术的学习过程，期待您的**★★★Star★★★**
+👉 记录spring-boot整合一些技术的『学习过程』，期待您的✨Star !
 
----
+如果您想入门相关技术，不妨拉下来尝试一下。
+至少比你去看博客一点一点粘贴要快得多。
 
 ### 1. 项目清单
 
