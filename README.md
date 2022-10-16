@@ -22,6 +22,7 @@
 * springboot-design-study: 设计模式相关学习
 * springboot-kafka-study: boot整合kafka
 * springboot-tdengine：boot整合TDengine
+* springboot-graphql: boot整合graphQL
 
 ### 2.待学习
 
